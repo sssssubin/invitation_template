@@ -1,13 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+
+import classNames from 'classnames/bind'
+
+import styles from './App.module.scss'
+
+const cx = classNames.bind(styles)
 
 function App() {
   return (
-    <div className="App">
+    <div className={cx('container')}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className={cx('main-bg')}>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
@@ -20,7 +26,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
