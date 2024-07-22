@@ -1,5 +1,23 @@
 .container {
-  background-color: var(--primary);
+  min-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #e0e7d9;
+  overflow: hidden;
+}
+.wrap {
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-source: url(../public/assets/background.png);
+  border-image-slice: 30% 49%;
+  border-image-width: 280px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  margin: 0px auto;
 }
 .main-bg {
   background: var(--secondary);

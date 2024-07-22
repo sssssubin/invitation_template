@@ -3,12 +3,17 @@ import { useEffect, useState } from 'react'
 
 import styles from './App.module.scss'
 
-import FullScreenMessage from './components/shared/FullScreenMessage'
+import FullScreenMessage from '@components/shared/FullScreenMessage'
+
+import Heading from '@components/sections/Heading'
+import HeroMedia from '@/components/sections/HeroMedia'
+
+import { Wedding } from '@models/wedding'
 
 const cx = classNames.bind(styles)
 
 function App() {
-  const [wedding, setWedding] = useState(null)
+  const [wedding, setWedding] = useState<Wedding | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -25,7 +30,6 @@ function App() {
       })
       .then((data) => {
         setWedding(data)
-        setLoading(false)
       })
       .catch((e) => {
         console.log('에러 발생', e)
@@ -36,7 +40,7 @@ function App() {
       })
   }, [])
 
-  if (loading === false) {
+  if (loading) {
     return <FullScreenMessage type="loading" />
   }
 
@@ -44,7 +48,21 @@ function App() {
     return <FullScreenMessage type="error" />
   }
 
-  return <div className={cx('container')}>{JSON.stringify(wedding)}</div>
+  if (wedding == null) {
+    return null
+  }
+
+  const { date } = wedding
+
+  return (
+    <div className={cx('container')}>
+      <div className={cx('wrap')}>
+        <HeroMedia />
+        <Heading date={date} />
+        {JSON.stringify(wedding)}
+      </div>
+    </div>
+  )
 }
 
 export default App

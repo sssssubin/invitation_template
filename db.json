@@ -1,7 +1,7 @@
 {
   "wedding": {
     "id": 0,
-    "date": "2023-08-27T13:00:00",
+    "date": "2024-07-22T13:00:00",
     "location": {
       "lat": 37.28163212324522,
       "lng": 127.0303329958705,
@@ -24,7 +24,7 @@
       }
     },
     "groom": {
-      "name": "류우선",
+      "name": "000회사",
       "account": {
         "bankName": "신한",
         "accountNumber": "110-356-123433",
@@ -51,7 +51,7 @@
       ]
     },
     "bride": {
-      "name": "이지혜",
+      "name": "김수빈",
       "account": {
         "bankName": "농협",
         "accountNumber": "352-0952-4669-11"
