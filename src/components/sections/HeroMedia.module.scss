@@ -4,9 +4,10 @@
   flex-direction: column;
   align-items: center;
   color: rgb(34, 34, 34);
-  img, video {
+  img,
+  video {
     border-radius: 200px 200px 0px 0px;
-    width: 90%;
+    width: 100%;
     max-width: 450px;
     padding-top: 30px;
   }

@@ -6,7 +6,8 @@ import styles from './App.module.scss'
 import FullScreenMessage from '@components/shared/FullScreenMessage'
 
 import Heading from '@components/sections/Heading'
-import HeroMedia from '@/components/sections/HeroMedia'
+import HeroMedia from '@components/sections/HeroMedia'
+import ImageGallery from '@components/sections/ImageGallery'
 
 import { Wedding } from '@models/wedding'
 
@@ -52,13 +53,14 @@ function App() {
     return null
   }
 
-  const { date } = wedding
+  const { date, galleryImages } = wedding
 
   return (
     <div className={cx('container')}>
       <div className={cx('wrap')}>
         <HeroMedia />
         <Heading date={date} />
+        <ImageGallery images={galleryImages} />
         {JSON.stringify(wedding)}
       </div>
     </div>
