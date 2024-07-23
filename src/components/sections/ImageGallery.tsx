@@ -15,6 +15,10 @@ function ImageGallery({ images }: { images: string[] }) {
     setSelectedIdx(idx)
   }
 
+  const handleClose = () => {
+    setSelectedIdx(-1)
+  }
+
   return (
     <>
       <Section title="Gallery" className={cx('container')}>
@@ -32,7 +36,12 @@ function ImageGallery({ images }: { images: string[] }) {
           ))}
         </ul>
       </Section>
-      <ImageViewer images={images} open={open} selectedIdx={selectedIdx} />
+      <ImageViewer
+        images={images}
+        open={open}
+        selectedIdx={selectedIdx}
+        onClose={handleClose}
+      />
     </>
   )
 }
