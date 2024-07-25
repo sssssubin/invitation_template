@@ -9,7 +9,8 @@ import Heading from '@components/sections/Heading'
 import HeroMedia from '@components/sections/HeroMedia'
 import ImageGallery from '@components/sections/ImageGallery'
 import Intro from '@components/sections/Intro'
-import Message from '@/components/sections/Message'
+import Message from '@components/sections/Message'
+import Calendar from '@components/sections/Calendar'
 
 import { Wedding } from '@models/wedding'
 
@@ -77,6 +78,7 @@ function App() {
         <Message intro={intro} invitation={invitation} />
         {/* <Heading date={date} /> */}
         <ImageGallery images={galleryImages} />
+        <Calendar date={date} />
         {JSON.stringify(wedding)}
       </div>
     </div>
