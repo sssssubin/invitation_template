@@ -11,6 +11,7 @@ import ImageGallery from '@components/sections/ImageGallery'
 import Intro from '@components/sections/Intro'
 import Message from '@components/sections/Message'
 import Calendar from '@components/sections/Calendar'
+import Map from '@components/sections/Map'
 
 import { Wedding } from '@models/wedding'
 
@@ -79,6 +80,7 @@ function App() {
         {/* <Heading date={date} /> */}
         <ImageGallery images={galleryImages} />
         <Calendar date={date} />
+        <Map location={location} />
         {JSON.stringify(wedding)}
       </div>
     </div>

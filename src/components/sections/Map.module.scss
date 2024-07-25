@@ -1,0 +1,72 @@
+.wrap-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+
+  .txt-title {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    span {
+      color: rgb(232, 140, 166);
+      font-size: 15px;
+    }
+  }
+
+  .txt-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'SUITE';
+    color: #000;
+    line-height: 130%;
+  }
+}
+
+.wrap-map {
+  position: relative;
+
+  .map {
+    width: 100%;
+    height: 250px;
+  }
+
+  .btn-find-way {
+    border: 1px solid var(--black);
+    padding: 8px 32px;
+    z-index: 2;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 32px;
+  }
+}
+.waytocome {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+  gap: 20px;
+  .wrap-waytocome {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .txt-label {
+      font-family: HSSanTokki20-Regular, serif;
+      color: rgb(232, 140, 166);
+      word-break: keep-all;
+    }
+    .txt-list {
+      margin: 0 0 20px;
+      .txt-item {
+        line-height: 150%;
+      }
+    }
+  }
+}
