@@ -1,0 +1,10 @@
+@import '@scss/untils.scss';
+
+.container {
+  @include txt-content();
+  .intro-txt,
+  .invitation-txt {
+    line-height: 2.2rem;
+    word-break: keep-all;
+  }
+}

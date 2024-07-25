@@ -8,6 +8,8 @@ import FullScreenMessage from '@components/shared/FullScreenMessage'
 import Heading from '@components/sections/Heading'
 import HeroMedia from '@components/sections/HeroMedia'
 import ImageGallery from '@components/sections/ImageGallery'
+import Intro from '@components/sections/Intro'
+import Message from '@/components/sections/Message'
 
 import { Wedding } from '@models/wedding'
 
@@ -53,13 +55,27 @@ function App() {
     return null
   }
 
-  const { date, galleryImages } = wedding
+  const {
+    date,
+    galleryImages,
+    groom,
+    bride,
+    location,
+    message: { intro, invitation },
+  } = wedding
 
   return (
     <div className={cx('container')}>
       <div className={cx('wrap')}>
         <HeroMedia />
-        <Heading date={date} />
+        <Intro
+          groomName={groom.name}
+          brideName={bride.name}
+          locationName={location.name}
+          date={date}
+        />
+        <Message intro={intro} invitation={invitation} />
+        {/* <Heading date={date} /> */}
         <ImageGallery images={galleryImages} />
         {JSON.stringify(wedding)}
       </div>
