@@ -5,6 +5,7 @@ import Section from '@shared/Section'
 import styles from './ImageGallery.module.scss'
 
 import ImageViewer from '../ImageViewer'
+import generateImageUrl from '@utils/generateImageUrl'
 
 const cx = classNames.bind(styles)
 
@@ -42,7 +43,24 @@ function ImageGallery({ images }: { images: string[] }) {
                   handleSelectedImage(idx)
                 }}
               >
-                <img src={src} alt="사진첩 이미지" />
+                <picture>
+                  <source
+                    srcSet={generateImageUrl({
+                      filename: src,
+                      format: 'webp',
+                      option: 'w_200,h_300,q_auto,c_fill',
+                    })}
+                    type="image/webp"
+                  />
+                  <img
+                    src={generateImageUrl({
+                      filename: src,
+                      format: 'jpg',
+                      option: 'w_200,h_300,c_fill,q_auto',
+                    })}
+                    alt="이미지"
+                  />
+                </picture>
               </li>
             ))}
           </ul>

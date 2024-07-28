@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   color: rgb(34, 34, 34);
+  height: auto;
+  min-height: 674px;
   img,
   video {
     border-radius: 200px 200px 0px 0px;
@@ -15,6 +17,12 @@
   }
   img {
     width: 90%;
+    height: auto;
     padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 2 / 3;
+    min-width: 396px;
+    min-height: 594px;
   }
 }
