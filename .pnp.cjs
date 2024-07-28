@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.102"],\
           ["@types/react", "npm:18.3.3"],\
+          ["@types/react-copy-to-clipboard", "npm:5.0.7"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.5.1"],\
@@ -47,6 +48,7 @@ const RAW_RUNTIME_STATE =
           ["json-server", "npm:1.0.0-beta.1"],\
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:18.3.1"],\
+          ["react-copy-to-clipboard", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.1.0"],\
           ["react-day-picker", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:8.10.1"],\
           ["react-dom", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:18.3.1"],\
           ["react-scripts", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.0.1"],\
@@ -5246,6 +5248,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/react-copy-to-clipboard", [\
+      ["npm:5.0.7", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-react-copy-to-clipboard-npm-5.0.7-cf9459d351-10c0.zip/node_modules/@types/react-copy-to-clipboard/",\
+        "packageDependencies": [\
+          ["@types/react-copy-to-clipboard", "npm:5.0.7"],\
+          ["@types/react", "npm:18.3.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/react-dom", [\
       ["npm:18.3.0", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@types-react-dom-npm-18.3.0-111444d3eb-10c0.zip/node_modules/@types/react-dom/",\
@@ -7521,6 +7533,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/cookie-signature-npm-1.0.6-93f325f7f0-10c0.zip/node_modules/cookie-signature/",\
         "packageDependencies": [\
           ["cookie-signature", "npm:1.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["copy-to-clipboard", [\
+      ["npm:3.3.3", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/copy-to-clipboard-npm-3.3.3-6964e6cfad-10c0.zip/node_modules/copy-to-clipboard/",\
+        "packageDependencies": [\
+          ["copy-to-clipboard", "npm:3.3.3"],\
+          ["toggle-selection", "npm:1.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10956,6 +10978,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.102"],\
           ["@types/react", "npm:18.3.3"],\
+          ["@types/react-copy-to-clipboard", "npm:5.0.7"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.5.1"],\
@@ -10969,6 +10992,7 @@ const RAW_RUNTIME_STATE =
           ["json-server", "npm:1.0.0-beta.1"],\
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:18.3.1"],\
+          ["react-copy-to-clipboard", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.1.0"],\
           ["react-day-picker", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:8.10.1"],\
           ["react-dom", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:18.3.1"],\
           ["react-scripts", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.0.1"],\
@@ -15834,6 +15858,30 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-copy-to-clipboard", [\
+      ["npm:5.1.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/react-copy-to-clipboard-npm-5.1.0-de9742f2bc-10c0.zip/node_modules/react-copy-to-clipboard/",\
+        "packageDependencies": [\
+          ["react-copy-to-clipboard", "npm:5.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-copy-to-clipboard-virtual-9e871ccf92/5/AppData/Local/Yarn/Berry/cache/react-copy-to-clipboard-npm-5.1.0-de9742f2bc-10c0.zip/node_modules/react-copy-to-clipboard/",\
+        "packageDependencies": [\
+          ["react-copy-to-clipboard", "virtual:4a793c66b413911215eadf63298c29598d1d3ad47edd86280a40bac0c50fa08b8429d2a52b926e36f640142bf622cedf10c6312efe82170509518ee94c5ed401#npm:5.1.0"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["copy-to-clipboard", "npm:3.3.3"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-day-picker", [\
       ["npm:8.10.1", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/react-day-picker-npm-8.10.1-708bfe7c0e-10c0.zip/node_modules/react-day-picker/",\
@@ -17814,6 +17862,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["to-regex-range", "npm:5.0.1"],\
           ["is-number", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["toggle-selection", [\
+      ["npm:1.0.6", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/toggle-selection-npm-1.0.6-c506b73005-10c0.zip/node_modules/toggle-selection/",\
+        "packageDependencies": [\
+          ["toggle-selection", "npm:1.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
