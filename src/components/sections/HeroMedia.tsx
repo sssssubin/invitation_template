@@ -9,16 +9,16 @@ function MainImg() {
   return (
     <Section className={cx('container')}>
       <picture>
-        <source srcSet={'/assets/img-sample.webp'} type="image/webp" />
+        <source srcSet={'/assets/img-sample2.webp'} type="image/webp" />
         <img
-          src={'/assets/img-sample.jpg'}
+          src={'/assets/img-sample2.jpg'}
           alt="샘플 이미지"
           fetchPriority="high"
           width="396"
           height="594"
         />
       </picture>
-      {/* <video autoPlay loop muted poster="/assets/poster.jpg">
+      {/* <video autoPlay loop muted>
         <source src="/assets/main.webm" type="video/webm" />
         <source src="/assets/main.mp4" type="video/mp4" />
       </video> */}

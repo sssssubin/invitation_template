@@ -6,6 +6,19 @@
   color: rgb(34, 34, 34);
   height: auto;
   min-height: 674px;
+  picture {
+    width: 90%;
+    padding-top: 20px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 2 / 3;
+      min-width: 396px;
+      min-height: 594px;
+    }
+  }
   img,
   video {
     border-radius: 200px 200px 0px 0px;
@@ -14,15 +27,5 @@
   video {
     width: 100%;
     padding-top: 30px;
-  }
-  img {
-    width: 90%;
-    height: auto;
-    padding-top: 20px;
-    margin: 0 auto;
-    display: block;
-    aspect-ratio: 2 / 3;
-    min-width: 396px;
-    min-height: 594px;
   }
 }
