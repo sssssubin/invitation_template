@@ -5,6 +5,7 @@ import classNames from 'classnames/bind'
 import styles from './Calendar.module.scss'
 import Section from '@shared/Section'
 import { DayPicker } from 'react-day-picker'
+import { memo } from 'react'
 
 import 'react-day-picker/dist/style.css'
 const cx = classNames.bind(styles)
@@ -53,4 +54,4 @@ function Calendar({ date }: { date: string }) {
   )
 }
 
-export default Calendar
+export default memo(Calendar)
