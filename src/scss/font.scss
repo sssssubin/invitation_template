@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'SUITE';
+  src:
+    url('../assets/fonts/subset-SUITEVariable-Light.woff2') format('woff2'),
+    url('../assets/fonts/subset-SUITEVariable-Light.woff') format('woff'),
+    url('../assets/fonts/subset-SUITEVariable-Light.ttf') format('truetype');
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'HSSanTokki20-Regular';
+  src:
+    url('../assets/fonts/subset-HSSanTokki20-Regular.woff2') format('woff2'),
+    url('../assets/fonts/subset-HSSanTokki20-Regular.woff') format('woff'),
+    url('../assets/fonts/subset-HSSanTokki20-Regular.ttf') format('truetype');
+  font-display: fallback;
+}

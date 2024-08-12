@@ -1,0 +1,19 @@
+@import '@scss/untils.scss';
+
+.container {
+  @include txt-content();
+  .wrap-persons {
+    font-family: HSSanTokki20-Regular, serif;
+    font-size: 2rem;
+    color: rgb(47, 33, 32);
+    line-height: 140%;
+    word-break: keep-all;
+  }
+  .wrap-info {
+    font-size: 1.1rem;
+    color: rgb(47, 33, 32);
+    line-height: 140%;
+    word-break: keep-all;
+    margin: 30px 0;
+  }
+}

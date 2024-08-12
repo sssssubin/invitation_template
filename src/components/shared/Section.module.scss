@@ -1,0 +1,12 @@
+.container {
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  .txt-title {
+    font-family: 'HSSanTokki20-Regular', serif;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: rgb(232, 140, 166);
+    white-space: pre-line;
+  }
+}
