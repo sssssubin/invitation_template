@@ -35,7 +35,7 @@ function AttendCountModal({ wedding }: { wedding: Wedding }) {
           return
         }
 
-        await fetch('http://localhost:8888/wedding', {
+        await fetch(`${process.env.REACT_APP_SERVER_URL}/wedding`, {
           method: 'PUT',
           body: JSON.stringify({
             ...wedding,

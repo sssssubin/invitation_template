@@ -46,9 +46,9 @@ function App() {
         {/* <Heading date={date} /> */}
         <ImageGallery images={galleryImages} />
         <Calendar date={date} />
-        <Map location={location} />
+        {/* <Map location={location} /> */}
         <Contact groom={groom} bride={bride} />
-        <Share groomName={groom.name} brideName={bride.name} date={date} />
+        {/* <Share groomName={groom.name} brideName={bride.name} date={date} /> */}
         <AttendCountModal wedding={wedding} />
       </div>
     </div>
