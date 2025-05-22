@@ -13,7 +13,6 @@ function MainImg() {
         <img
           src={'/assets/img-sample2.jpg'}
           alt="샘플 이미지"
-          fetchPriority="high"
           width="396"
           height="594"
         />
